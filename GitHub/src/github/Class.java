@@ -44,9 +44,14 @@ public class Class {
      * @param year Year of student
      * @param grade Grade of student
      */
-    public void addStudent(String name, int year, int grade) {
+    public void addStudent(String name, int year, int grade, String gender) {
         // Create code to...
         // Add student to list using given info (Parameters may change)
+        Student myObject = new Student();
+        myObject.setName(name);
+        myObject.setYear(year);
+        myObject.setGrade(grade);
+        myObject.setGender(gender);
         
         // Change count
         studentCount = students.length;
