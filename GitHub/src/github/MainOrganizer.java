@@ -44,7 +44,9 @@ public class MainOrganizer {
                     int year = scan.nextInt();
                     System.out.println("What is the student's grade?");
                     int grade = scan.nextInt();
-                    myObject.addStudent(name, year, grade);
+                    System.out.println("What is the student's gender?");
+                    String gender = scan.next();
+                    myObject.addStudent(name, year, grade, gender);
                     // studentClass.addStudent(newName, newYear, newGrade);
                     break;
                 }
