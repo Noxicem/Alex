@@ -39,7 +39,7 @@ public class MainOrganizer {
                     // Create code to...
                     // Get user-entered info on new student and call add method 
                     System.out.println("What is the student's name?");
-                    String name = scan.next();
+                    String name = scan.nextLine();
                     System.out.println("What is the stuedent's year?");
                     int year = scan.nextInt();
                     System.out.println("What is the student's grade?");
