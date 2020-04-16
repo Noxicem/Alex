@@ -53,6 +53,18 @@ public class Class {
         myObject.setGrade(grade);
         myObject.setGender(gender);
         
+        Student[] temList = new Student[students.length + 1];
+        for(int i = 0; i < students.length; i++){
+            temList[i] = students[i];
+        }
+        temList[students.length] = myObject;
+        students = new Student[temList.length];
+        for(int i = 0; i < temList.length; i++){
+            students[i] = temList[i];
+        }
+        
+        System.out.println("Added Student");
+        
         // Change count
         studentCount = students.length;
     }
