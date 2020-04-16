@@ -27,8 +27,6 @@ public class MainOrganizer {
         Class studentClass = new Class();
         int choice = 1;        
         
-        Class myObject = new Class(); 
-        
         while (choice != 0) {
             // Get User Choice
             System.out.print("Would you like to add a student (1), remove a student " +
@@ -46,7 +44,7 @@ public class MainOrganizer {
                     int grade = scan.nextInt();
                     System.out.println("What is the student's gender?");
                     String gender = scan.next();
-                    myObject.addStudent(name, year, grade, gender);
+                    studentClass.addStudent(name, year, grade, gender);
                     // studentClass.addStudent(newName, newYear, newGrade);
                     break;
                 }
@@ -55,7 +53,7 @@ public class MainOrganizer {
                     // Remove student using user-entered name
                     System.out.println("What is the student's name?");
                     String name = scan.next();
-                    myObject.removeStudent(name);
+                    studentClass.removeStudent(name);
                     // studentClass.removeStudent(findName);
                     break;
                 }
